@@ -19,7 +19,7 @@ CREATE TABLE `accounts` (
 );
 
 INSERT INTO `customer` (`name`,`email`,`mobile_number`,`creation_date`)
- VALUES ('Test User','tester@gmail.com','0612344567',CURDATE());
+ VALUES ('John Doe','john@gmail.com','0612344567',CURDATE());
  
 INSERT INTO `accounts` (`customer_id`, `account_number`, `account_type`, `country`, `branch_address`, `creation_date`)
  VALUES (1, 52341199, 'Savings', 'Netherlands' , 'De Dam 1, Amsterdam', CURDATE());
