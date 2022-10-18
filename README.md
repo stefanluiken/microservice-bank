@@ -3,7 +3,8 @@ A simple bank, built with microservice architecture and containers.
 
 Notes:
 
-- We use Gradle for this project.
+- We use Java 17.
+- We use Gradle.
 - We use the following Spring dependencies:
   - Web
   - Actuator
@@ -45,7 +46,10 @@ The Account microservice's database can be accessed through `localhost:8080/h2-c
 2. **Loans**
 
 The Loans microservice is where we interact/store the loan information of our users.
-This microservice is accessible from server.port=8900.
+This microservice is accessible from server.port=8090.
+
+<details>
+<summary>API testing details</summary>
 
 After setting up the project, the `myLoans` endpoint can be tested by making a POST API (e.g. with Postman) to:
 
@@ -104,10 +108,15 @@ which should return output:
 ]
 ```
 
+</details>
+
 3. **Cards**
 
 The Cards microservice is where we interact/store the card information of our users (be careful, never expose full card numbers!).
 This microservice is accessible from server.port=9000.
+
+<details>
+<summary>API testing details</summary>
 
 After setting up the project, the `myCards` endpoint can be tested by making a POST API (e.g. with Postman) to:
 
@@ -155,6 +164,12 @@ which should return output:
   }
 ]
 ```
+
+</details>
+
+
+
+
 
 
 
