@@ -4,6 +4,7 @@ A simple bank, built with microservice architecture and containers.
 Notes:
 
 - We use Java 17.
+- We use SpringBoot 2.7.4
 - We use Gradle.
 - We use the following Spring dependencies:
   - Web
@@ -167,7 +168,29 @@ which should return output:
 
 </details>
 
+After installing Docker, a Docker image can be created by executing the following commands (example for the accounts microservice):
 
+```
+./gradlew build
+```
+
+Then, building the image:
+
+```
+docker build . -t microservicebank/accounts
+```
+
+Then, running the image:
+
+```
+docker run -p 8080:8080 microservicebank/accounts
+```
+
+The following command should show the instances that run:
+
+```
+docker ps
+```
 
 
 
