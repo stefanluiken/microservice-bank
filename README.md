@@ -1,6 +1,8 @@
 # microservice-bank
 A simple bank, built with microservice architecture and containers.
 
+![](microservice-bank.jpg)
+
 Notes:
 
 - We use Java 17.
