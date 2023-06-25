@@ -194,7 +194,17 @@ The following command should show the instances that run:
 docker ps
 ```
 
+To stop the container:
 
+```
+docker stop 'container name'
+```
+
+Other useful Docker commands:
+
+```
+docker logs -f 'container name'
+```
 
 
 
