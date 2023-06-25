@@ -180,12 +180,16 @@ Then, building the image:
 
 ```
 docker build . -t microservicebank/accounts
+docker build . -t microservicebank/loans
+docker build . -t microservicebank/cards
 ```
 
 Then, running the image:
 
 ```
 docker run -p 8080:8080 microservicebank/accounts
+docker run -p 8090:8090 microservicebank/loans
+docker run -p 9000:9000 microservicebank/cards
 ```
 
 The following command should show the instances that run:
@@ -206,6 +210,17 @@ Other useful Docker commands:
 docker logs -f 'container name'
 ```
 
+There is a docker compose yaml file in the root directory. This can be executed with the following command:
+
+```
+docker compose up
+```
+
+To stop the containers:
+
+```
+docker compose stop
+```
 
 
 

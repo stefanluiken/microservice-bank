@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+
+  accounts:
+    image: microservicebank/accounts:latest
+    mem_limit: 700m
+    ports:
+      - "8080:8080"
+    networks:
+      - microservice-bank-network
+    
+  loans:
+    image: microservicebank/loans:latest
+    mem_limit: 700m
+    ports:
+      - "8090:8090"
+    networks:
+      - microservice-bank-network
+    
+  cards:
+    image: microservicebank/cards:latest
+    mem_limit: 700m
+    ports:
+      - "9000:9000"
+    networks:
+      - microservice-bank-network
+    
+networks:
+  microservice-bank-network:
