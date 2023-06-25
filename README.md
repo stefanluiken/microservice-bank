@@ -170,6 +170,8 @@ which should return output:
 
 </details>
 
+## Instructions
+
 After installing Docker, a Docker image can be created by executing the following commands (example for the accounts microservice):
 
 ```
